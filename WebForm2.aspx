@@ -28,6 +28,9 @@
         (file upload)<br />
         <asp:Button ID="Button1" runat="server" Text="Button" />
 &nbsp;<asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
     </form>
 </body>
 </html>

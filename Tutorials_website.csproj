@@ -73,8 +73,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
     <Content Include="Images\ChatGPT Image Aug 22, 2025, 03_01_27 PM.png" />
     <Content Include="Images\peakpx.jpg" />
+    <Content Include="LoginPage.aspx" />
     <Content Include="validation.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -82,6 +87,13 @@
     <Content Include="XMLFile1.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="validation.aspx.cs">
       <DependentUpon>validation.aspx</DependentUpon>
